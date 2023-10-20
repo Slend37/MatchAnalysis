@@ -20,7 +20,7 @@ font2 = ImageFont.truetype("arial.ttf",30)
 # get an image
 def redgoal(s1,s2):
     global frames
-    with Image.open("C:/Users/av.malandin/Desktop/code/icebig.png").convert("RGBA") as base:
+    with Image.open("PATH TO FILE/icebig.png").convert("RGBA") as base:
         sc = str(s1)+' - '+str(s2)
     
         global puck
@@ -67,7 +67,7 @@ def redgoal(s1,s2):
 
 def bluegoal(s1,s2):
     global frames
-    with Image.open("C:/Users/av.malandin/Desktop/code/icebig.png").convert("RGBA") as base:
+    with Image.open("PATH TO FILE/icebig.png").convert("RGBA") as base:
         sc = str(s1)+' - '+str(s2)
 
         global puck
@@ -124,7 +124,7 @@ for i in range(randint(3,13)):
         bluegoal(score[0],score[1])
         
 
-frames[0].save('C:/Users/av.malandin/Desktop/code/montage.gif',
+frames[0].save('PATH TO FILE/montage.gif',
     save_all = True,
     append_images= frames[1:],
     optimize = True,
